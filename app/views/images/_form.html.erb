@@ -1,0 +1,11 @@
+<%= error_messages_for :image %>
+
+<%= form_for :image do |f| %>
+	<%= f.label :name %><br>
+	<%= f.text_field :name %><br>
+	<%= f.label "File" %><br>
+	<%= f.file_field(:width,:height) %>
+	<%= f.submit %>
+<% end %>
+
+
