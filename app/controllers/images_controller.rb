@@ -1,12 +1,17 @@
 class ImagesController < ApplicationController
 
-def new
-end
+	def new
+	  @image = Image.new
+	end
 
-def edit
-end
+	def edit
+	end
 
-def show
-end
+	def show
+	  @image = Image.find(params[:id])
+	end
 
+	def create
+	  @image = Image.create
+	end
 end

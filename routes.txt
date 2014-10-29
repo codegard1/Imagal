@@ -1,4 +1,5 @@
     Prefix Verb   URI Pattern                Controller#Action
+      root GET    /                          images#index
     images GET    /images(.:format)          images#index
            POST   /images(.:format)          images#create
  new_image GET    /images/new(.:format)      images#new
