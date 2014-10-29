@@ -1,0 +1,9 @@
+    Prefix Verb   URI Pattern                Controller#Action
+    images GET    /images(.:format)          images#index
+           POST   /images(.:format)          images#create
+ new_image GET    /images/new(.:format)      images#new
+edit_image GET    /images/:id/edit(.:format) images#edit
+     image GET    /images/:id(.:format)      images#show
+           PATCH  /images/:id(.:format)      images#update
+           PUT    /images/:id(.:format)      images#update
+           DELETE /images/:id(.:format)      images#destroy
